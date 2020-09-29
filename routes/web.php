@@ -11,7 +11,7 @@
 */
 use Illuminate\Http\Request;
 Route::get('/', function () {
-    return 'hi'; 
+    return view('guest.index'); 
 });
 Route::get("/formtosendpostmethod",function(){
 	return view("guest.form");
@@ -29,7 +29,7 @@ Route::get("/parameter/{id}",function($id){
 	return $id;
 })->name("gettest");
 Route::get("/mainpage",function(){
-	return view("Task_2.Input");
+	return view("guest.index");
 });
 Route::post("/secondpage",function(Request $req){
 	// return $req->post()["name"];
@@ -44,3 +44,9 @@ Route::post("/secondpage",function(Request $req){
 	];
 	return view("Task_2.Output",["newdata"=>$data]);
 })->name("secondpage");
+
+/*
+	error sadaaa? error ara ubralod is rogor gadmowere unda mekitxa da es index.blade php gadmovakopire daver vpoulob :d lol :D ras ver poulob zustad es sworad gizis layouts gaklia folderi da inc aui D;
+
+	eg routebshi unda gauwero ukve anu web.php shi ra misamartze mogitxovos  tu viewbshi mekitxebi layousts eqneba layouts.main da menus eqneba inc.menu kargi vcdi mashin  tu arm momwere ar mogeridos <# kargi ^_^
+*/ 

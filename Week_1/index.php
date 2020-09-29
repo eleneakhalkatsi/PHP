@@ -3,7 +3,7 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
+	</head>
 <body>
 <div class="container card">
 	<form method="POST" action="insert.php">
